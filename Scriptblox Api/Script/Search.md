@@ -1,4 +1,4 @@
-## Search
+# Search
 `https://scriptblox.com/api/script/search`
 
 ### Parameters
