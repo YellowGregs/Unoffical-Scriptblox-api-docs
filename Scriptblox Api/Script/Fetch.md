@@ -17,7 +17,7 @@ The API returns a paginated list of scripts along with details about the Owner &
 ---
 
 ### Inside `result`
-| Field         | Type      | What It Means                                                                 |
+| Field         | Type      | Description                                                                   |
 |---------------|-----------|-------------------------------------------------------------------------------|
 | `totalPages`  | Integer   | Total number of pages available.                                             |
 | `nextPage`    | Integer   | The next page number, if available.                                          |
