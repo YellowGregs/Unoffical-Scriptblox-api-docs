@@ -12,6 +12,8 @@ ScriptBlox is a platform where you can upload, share, and promote your scripts w
 
 No, this documentation is **unofficial** and is created by **SoloDev#7416**, but was kinda revamp by YellowGreg.
 
+[Original Documentation](https://github.com/DocsGuy/Unoffical-Scriptblox-api-docs)
+
 ---
 
 <div align="center">
