@@ -51,7 +51,7 @@ Each script entry includes these fields:
 ### Game Details (`game`)
 | Field      | Type      | Description                            |
 |------------|-----------|------------------------------------------|
-| `gameId`   | Integer   | The ID for the game.                     |
+| `gameId`   | Integer   | The ID for the Roblox game.              |
 | `name`     | String    | The name of the Roblox game.             |
 | `imageUrl` | String    | A URL to the game's image.               |
 
