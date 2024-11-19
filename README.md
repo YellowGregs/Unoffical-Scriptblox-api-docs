@@ -1,10 +1,20 @@
-# Unoffical-Scriptblox-api-docs
-[![discord server](https://cdn.discordapp.com/icons/954089188825894943/6b54fd0e58e6a110e07cf1da6ebbe2ae.webp?size=96)](https://discord.gg/KKcG8VQ48k) Click on the image to join the scriptblox server
+# Unofficial ScriptBlox API Documentation
 
-# What is scriptblox?
-- scriptblox is a website where you can upload your scripts for other people!
-- You can also promote your script
-- It also has some unique features
+## What is ScriptBlox?
 
-# Are these docs by Scriptblox?
-- No. They are made by SoloDev#7416
+ScriptBlox is a platform where you can upload, share, and promote your scripts with others. It offers many features for script creators and users, including:
+
+- **Uploading**: upload your scripts for others to use.
+- **Script Promotion**: Promote your scripts to gain more attraction.
+- **Features**: ScriptBlox provides tools and functionalities to improve the script-sharing experience.
+
+## Are These Docs Official?
+
+No, this documentation is **unofficial** and is created by **SoloDev#7416**, but was kinda revamp by YellowGreg.
+
+---
+
+<div align="center">
+  <h1>Join the ScriptBlox Community</h1>
+  <a href="https://discord.gg/4hn2MckCQM"><img src="https://svgl-badge.vercel.app/api/Software/Discord?theme=dark" alt="Join ScriptBlox on Discord"></a>
+</div>
