@@ -1,12 +1,12 @@
-# Search
+## Search
 `https://scriptblox.com/api/script/search`
 
 ### Parameters
-| Parameter      | Description                             | Example Value |
-|-----------------|-----------------------------------------|---------------|
-| `q`            | The search term or keyword.            | `D`           |
-| `script name`  | Filter scripts by name or keyword.      | `5`           |
-| `mode`         | Filter by script type (e.g., `free`, `paid`).   | `mode=free`   |
+| Parameter      | Type   | Description                                | Example Value |
+|-----------------|--------|--------------------------------------------|---------------|
+| `q`            | String | The search term or keyword.               | `D`           |
+| `script name`  | String | Filter scripts by name or keyword.         | `5`           |
+| `mode`         | String | Filter by script type (`free`, `paid`).    | `mode=free`   |
 
 ---
 
@@ -19,43 +19,43 @@ The API gives you a list of scripts based on your search. Here's how the data is
 ---
 
 ### Inside `result`
-| Field           | What It Means                       |
-|------------------|-------------------------------------|
-| `totalPages`    | Total number of pages of results.   |
-| `scripts`       | A list of scripts matching the search.|
+| Field           | Type      | Description                       |
+|------------------|-----------|-------------------------------------|
+| `totalPages`    | Integer   | Total number of pages of results.   |
+| `scripts`       | Array     | A list of scripts matching the search.|
 
 ---
 
 ### Each Script
 Every script in the list has these details:
 
-| Field          | What It Means                                                                 |
-|-----------------|-------------------------------------------------------------------------------|
-| `_id`          | The ID for the script.                                                       |
-| `title`        | The name of the script.                                                      |
-| `game`         | Details about the roblox game the script is for (if it's game-specific).     |
-| `script`       | The script code or loadstring you can use.                                   |
-| `slug`         | A simplified name used in the script's link.                                 |
-| `verified`     | Shows if the script is verified.                                             |
-| `key`          | Shows if a key is needed to use the script.                                  |
-| `keyLink`      | The link to get the key (if required).                                       |
-| `views`        | How many people have viewed the script.                                      |
-| `scriptType`   | Tells if the script is free or paid.                                         |
-| `isUniversal`  | Whether the script works with all roblox games or just one.                  |
-| `isPatched`    | Whether the script is broken or still works.                                 |
-| `visibility`   | Shows if the script is public or private.                                    |
-| `createdAt`    | When the script was first added.                                             |
-| `updatedAt`    | When the script was last updated.                                            |
-| `matched`      | Highlights what parts of the script match your search.                      |
+| Field          | Type      | Description                                                                 |
+|-----------------|-----------|-------------------------------------------------------------------------------|
+| `_id`          | String    | The ID for the script.                                                       |
+| `title`        | String    | The name of the script.                                                      |
+| `game`         | Object    | Details about the Roblox game the script is for (if it's game-specific).      |
+| `script`       | String    | The script code or loadstring you can use.                                   |
+| `slug`         | String    | A simplified name used in the script's link.                                 |
+| `verified`     | Boolean   | Shows if the script is verified.                                             |
+| `key`          | Boolean   | Shows if a key is needed to use the script.                                  |
+| `keyLink`      | String    | The link to get the key (if required).                                       |
+| `views`        | Integer   | How many people have viewed the script.                                      |
+| `scriptType`   | String    | Tells if the script is free or paid.                                         |
+| `isUniversal`  | Boolean   | Whether the script works with all Roblox games or just one.                  |
+| `isPatched`    | Boolean   | Whether the script is broken or still works.                                 |
+| `visibility`   | String    | Shows if the script is public or private.                                    |
+| `createdAt`    | String    | When the script was first added (ISO timestamp).                             |
+| `updatedAt`    | String    | When the script was last updated (ISO timestamp).                            |
+| `matched`      | Array     | Highlights what parts of the script match your search.                      |
 
 ---
 
 ### Game Details (`game`)
-| Field      | What It Means                            |
-|------------|------------------------------------------|
-| `gameId`   | The ID for the game.                     |
-| `name`     | The name of the roblox game.            |
-| `imageUrl` | A link to the game image or custom image.|
+| Field      | Type      | Description                            |
+|------------|-----------|------------------------------------------|
+| `gameId`   | Integer   | The ID for the game.                     |
+| `name`     | String    | The name of the Roblox game.             |
+| `imageUrl` | String    | A link to the game image or custom image.|
 
 ---
 
@@ -64,6 +64,8 @@ Every script in the list has these details:
 ```
 https://scriptblox.com/api/script/search?q=D&script name=5&mode=mode (e.g mode=free)
 ```
+
+---
 
 ## Example Response
 ```json
