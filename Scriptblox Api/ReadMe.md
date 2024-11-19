@@ -9,8 +9,8 @@ These are the unofficial ScriptBlox API docs.
 
 - Everything that is in **brackets** (and not commented) refers to JSON data.
 - If you're making a request and it doesn't work, **try adding the Authorization header** with your token.
-- If you need help using JSON data in Python, here’s an example:
 - **Token Expiration**: I don't know if the Tokens can be expire, but If you encounter authentication errors, you may need to retrieve a new token.
+- If you need help using JSON data in Python, here’s an example:
 
 ---
 
